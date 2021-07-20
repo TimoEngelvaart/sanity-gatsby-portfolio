@@ -25,7 +25,7 @@ const NavStyles = styled.nav`
     align-items: center;
     width: 57px;
     height: 64px;
-    background: ${(props) => props.BkgColor || 'blue'};
+    background: black;
 
     font-size: 0.78rem;
     color: white;

@@ -28,7 +28,7 @@ const FooterStyles = styled.footer`
       width: 7rem;
     }
     //COPYRIGHT
-    li {
+    .logo__copyright {
       font-size: 1rem;
       margin-top: 2rem;
     }
@@ -46,12 +46,13 @@ const FooterStyles = styled.footer`
       margin-bottom: 0.5rem;
       font-family: 'FuturaHeavy', sans-serif;
       font-weight: normal;
-      color: $color-white;
+      color: white;
+      font-size: 1.5rem;
     }
 
     // SITEMAP ITEMS
-    > a {
-      color: $color-grey;
+    > li > a {
+      color: grey;
       line-height: 1.8rem;
 
       &:hover {
@@ -71,15 +72,17 @@ const FooterStyles = styled.footer`
       margin-bottom: 0.5rem;
       font-family: 'FuturaHeavy', sans-serif;
       font-weight: normal;
-      color: $color-white;
+      color: white;
+      font-size: 1.5rem;
     }
 
-    > a {
+    > li:not(:first-child) {
       line-height: 1.8rem;
-      color: $color-grey;
+      color: grey;
 
       &:hover {
         color: white;
+        cursor: pointer;
       }
     }
   }
@@ -150,16 +153,19 @@ export default function Footer() {
       <ul className="sitemap">
         <li className="sitemap__titel">SITEMAP</li>
         <li>
-          <Link to="/">KIM</Link>
+          <Link to="/">Home</Link>
         </li>
         <li>
-          <Link to="/pizzas/">WORK</Link>
+          <Link to="/">Kim</Link>
         </li>
         <li>
-          <Link to="/slicemasters">MEET</Link>
+          <Link to="/pizzas/">Work</Link>
         </li>
         <li>
-          <Link to="/order">MORE</Link>
+          <Link to="/slicemasters">Meet</Link>
+        </li>
+        <li>
+          <Link to="/order">More</Link>
         </li>
       </ul>
       <ul className="contact">

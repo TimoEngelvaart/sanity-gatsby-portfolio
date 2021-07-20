@@ -6,7 +6,7 @@
   min-height: calc(100% - 73px - 120px);
 
   @media (--media-min-small) {
-    min-height: 35rem;
+    min-height: 37rem;
   }
 }
 

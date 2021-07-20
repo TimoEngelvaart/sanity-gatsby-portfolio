@@ -37,7 +37,7 @@ const HomeStyles = styled.div`
       position: absolute;
       opacity: 0.07;
       height: 549px;
-      top: 250px;
+      top: 280px;
       right: 0px;
     }
 
@@ -60,7 +60,7 @@ const HomeStyles = styled.div`
 
     &__tekst {
       margin-top: 1rem;
-      font-family: "Futuramediumbt", sans-serif;
+      font-family: "FuturaHeavy", sans-serif;
     }
   }
 
