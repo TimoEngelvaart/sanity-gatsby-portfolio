@@ -3,7 +3,6 @@ import styled from "styled-components";
 import Icon from "./../assets/images/NieuwPatroonKort.svg";
 import Layout from "../containers/layout";
 
-
 const HomeStyles = styled.div`
   .grid-top {
     position: absolute;
@@ -172,13 +171,12 @@ const HomeStyles = styled.div`
   }
 `;
 
-
 export default function HomePage({ data }) {
-    // eslint-disable-next-line prefer-destructuring
-    // const site = (data || {}).site;
-    // console.log(site.description);
-    return (
-      <Layout>
+  // eslint-disable-next-line prefer-destructuring
+  // const site = (data || {}).site;
+  // console.log(site.description);
+  return (
+    <Layout>
       <HomeStyles>
         <Icon className="mainContent_svg" />
         <div className="grid-top">
@@ -211,6 +209,6 @@ export default function HomePage({ data }) {
           </div>
         </div>
       </HomeStyles>
-      </Layout>
-    );
-  }
+    </Layout>
+  );
+}

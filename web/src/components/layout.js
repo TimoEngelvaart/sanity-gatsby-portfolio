@@ -1,6 +1,5 @@
 import React from "react";
-import Header from "./header";
-import Header2 from "./header2";
+import Header from "./header2";
 import Footer from "./footer";
 import Typography from "./../styles/Typography";
 
@@ -12,7 +11,7 @@ const Layout = ({ children, onHideNav, onShowNav, showNav, siteTitle }) => (
   <>
     <GlobalStyles />
     <Typography />
-    <Header2 />
+    <Header />
     <div className={styles.content}>{children}</div>
     <Footer />
   </>
